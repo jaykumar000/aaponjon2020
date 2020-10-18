@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+     <title>Aaponjon Durga Puja 2020</title>
+    <link rel="stylesheet" href="css/headermenu.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="js/fetch.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+  <div class="containers" id="myHeader" style="background-color: #ffff99;">
+    <nav>
+      <div class="logo">
+        <a href="#"><img src="images/apanjanlogo11.jpeg" alt="Apanjan Community" >
+        </a>
+      </div>
+		  <label for="btn" class="icons">
+       		 <span class="fa fa-bars"></span>
+      </label>
+      <input type="checkbox" id="btn"></input>
+      <ul>
+			     <li><a href="#">Home</a></li>
+			     <li>
+          		<label for="btn-1" class="show">Gallery + </label>
+          		<a href="#">Gallery</a>
+          		<input type="checkbox" id="btn-1"></input>
+          		<ul>
+					       <li><a href="galleryphotos.html">Photos</a></li>
+					       <li><a href="#">Videos</a></li>
+		  		    </ul>
+			    </li>
+		      <li><a href="aboutUs.html">About Us</a></li>
+		      <li><a href="contactUs.html">Contact Us</a></li>
+	    </ul>
+    </nav>
+  </div>
+
+
+<div class="contents">
+		 <div class="slideshow-holder">
+		    <div class="sliders fade">
+  			     <img src="images/sliderimage1.jpeg" style="width:100%;max-height:380px"></img>
+		    </div>
+		    <div class="sliders fade">
+  			     <img src="images/sliderimage2.jpeg" style="width:100%;max-height:380px"></img>
+		    </div>
+        <div class="fontStyle" style="text-align: center;">
+          The most awaited event of the year has come. Enjoy this auspicious festival with your loved ones. Stay safe, Stay at home.
+        </div>
+        <div style="text-align:center">
+     		   <span class="indicator" onclick="currentSlide(1)"></span>
+     		   <span class="indicator" onclick="currentSlide(2)"></span>
+       </div>
+     </div>
+
+     <!-- tab style Strats -->
+     <div class="wrapper">
+       <!-- Mahashosti-->
+       <div class="parent-tab tab-3">
+         <input type="radio" name="tab" id="tab-1" checked>
+         <label for="tab-1">
+           <span>Maha Shasti</span>
+           <div class="icon"><i class="fas fa-plus"></i></div>
+         </label>
+         <div class="content">
+          <h4>Bangla 5 Kartik, 22nd October 2020, Thrusday<h4>
+           <p>
+              06:30 PM : Saradia Durga Devi Kolpa Aarambho, Devi-er Aamontron 0 Aadhibas<br/>
+          </p>
+          <div class="child-tab">
+            <input type="checkbox" name="sub-tab" id="tab-1.1">
+            <label for="tab-1.1">
+              <span>Live Streaming</span>
+              <div class="icon"><i class="fas fa-plus"></i></div>
+            </label>
+            <div class="sub-content">
+             <div style="display:flex;">
+                  <p>
+                    <button class="button" id="liveid1" title="Server 1" onclick="getData_Server1(); window.open(liveUrl, '_blank'); return false;">Server 1</button>
+                    <button class="button" id="liveid2" title="Server 2" onclick="getData_Server2(); window.open(liveUrl, '_blank'); return false;">Server 2</button>
+                 </p>
+            </div>
+            </div>
+          </div>
+
+        </div>
+       </div>
+
+       <!-- Maha Saptami -->
+       <div class="parent-tab tab-3">
+         <input type="radio" name="tab" id="tab-2">
+         <label for="tab-2">
+           <span>Maha Saptami</span>
+           <div class="icon"><i class="fas fa-plus"></i></div>
+         </label>
+         <div class="content">
+           <h4>Bangla 6 Kartik, 23rd October 2020, Friday<h4>
+            <p>
+                07:30 AM - Nobopotrika Aagomon Jalashaya Roana, Nobopotrika Prabesh</br>
+                09:30 AM - Maha Saptami Puja Aarambho </br>
+                10:30 AM - Pushpanjali</br>
+                12:00 PM - Bhog Nibedan</br>
+                07:10 PM - Sandhya Aarti</br>
+           </p>
+           <div class="child-tab">
+             <input type="checkbox" name="sub-tab" id="tab-2.1">
+             <label for="tab-2.1">
+               <span>Live Streaming</span>
+               <div class="icon"><i class="fas fa-plus"></i></div>
+             </label>
+             <div class="sub-content">
+               <div style="display:flex;">
+                    <p>
+                      <button class="button disabled-link" id="liveid1" title="Server 1" onclick="getData_Server1(); window.open(liveUrl, '_blank'); return false;">Server 1</button>
+                      <button class="button disabled-link" id="liveid2" title="Server 2" onclick="getData_Server2(); window.open(liveUrl, '_blank'); return false;">Server 2</button>
+                   </p>
+              </div>
+             </div>
+           </div>
+         </div>
+       </div>
+
+       <!-- Mahashtami -->
+       <div class="parent-tab tab-3">
+         <input type="radio" name="tab" id="tab-3">
+         <label for="tab-3" class="tab-3">
+           <span>Maha Ashtami</span>
+           <div class="icon"><i class="fas fa-plus"></i></div>
+         </label>
+         <div class="content">
+           <h4>Bangla 7 Kartik, 24th October 2020, Saturday<h4>
+             <p>
+               09:00 AM - Mahashtami Puja Aarambho</br>
+               11:00 AM - Sandhi Puja (till 11:48 AM)</br>
+               11:24 AM - Balidan</br>
+               11:30 AM - Pushpanjali</br>
+               12:00 PM - Bhog Nibedan</br>
+               07:10 PM - Sandhya Aarti</br>
+            </p>
+           <div class="child-tab">
+             <input type="checkbox" name="sub-tab" id="tab-3.1">
+             <label for="tab-3.1">
+               <span>Live Streaming</span>
+               <div class="icon"><i class="fas fa-plus"></i></div>
+             </label>
+             <div class="sub-content">
+               <div style="display:flex;">
+                    <p>
+                      <button class="button disabled-link" id="liveid1" title="Server 1" onclick="getData_Server1(); window.open(liveUrl, '_blank'); return false;">Server 1</button>
+                      <button class="button disabled-link" id="liveid2" title="Server 2" onclick="getData_Server2(); window.open(liveUrl, '_blank'); return false;">Server 2</button>
+                   </p>
+              </div>
+             </div>
+           </div>
+         </div>
+       </div>
+
+       <!-- Mahanabami -->
+       <div class="parent-tab tab-3">
+         <input type="radio" name="tab" id="tab-4">
+         <label for="tab-4">
+           <span>Maha Nabami</span>
+           <div class="icon"><i class="fas fa-plus"></i></div>
+         </label>
+         <div class="content">
+           <h4>Bangla 8 Kartik, 25th October 2020, Sunday<h4>
+           <p>
+              09:00 AM -  Mahanabami Puja Aarambho</br>
+              10:30 AM - Pushpanjali</br>
+              11:30 AM - Hom Kriya</br>
+              12:30 PM - Bhog Nibedan</br>
+              07:30 PM - Sandhya Aarti</br>
+         </p>
+         <div class="child-tab">
+             <input type="checkbox" name="sub-tab" id="tab-4.1">
+             <label for="tab-4.1">
+               <span>Live Streaming</span>
+               <div class="icon"><i class="fas fa-plus"></i></div>
+             </label>
+             <div class="sub-content">
+               <div style="display:flex;">
+                    <p>
+                      <button class="button disabled-link" id="liveid1" title="Server 1" onclick="getData_Server1(); window.open(liveUrl, '_blank'); return false;">Server 1</button>
+                      <button class="button disabled-link" id="liveid2" title="Server 2" onclick="getData_Server2(); window.open(liveUrl, '_blank'); return false;">Server 2</button>
+                   </p>
+              </div>
+             </div>
+           </div>
+
+         </div>
+       </div>
+       <!-- Bijaya Dashami -->
+       <div class="parent-tab tab-3">
+         <input type="radio" name="tab" id="tab-5">
+         <label for="tab-5">
+           <span>Bijaya Dashami</span>
+           <div class="icon"><i class="fas fa-plus"></i></div>
+         </label>
+         <div class="content">
+           <h4>Bangla 9 Kartik, 26th October 2020, Monday<h4>
+           <p>
+              Nobopotrika Bisarjon and Kalash Bisarjon - before 11:30 AM
+         </p>
+         <div class="child-tab">
+             <input type="checkbox" name="sub-tab" id="tab-5.1">
+             <label for="tab-5.1">
+               <span>Live Streaming</span>
+               <div class="icon"><i class="fas fa-plus"></i></div>
+             </label>
+             <div class="sub-content">
+               <div style="display:flex;">
+                    <p>
+                      <button class="button disabled-link" id="liveid1" title="Server 1" onclick="getData_Server1(); window.open(liveUrl, '_blank'); return false;">Server 1</button>
+                      <button class="button disabled-link" id="liveid2" title="Server 2" onclick="getData_Server2(); window.open(liveUrl, '_blank'); return false;">Server 2</button>
+                   </p>
+              </div>
+             </div>
+           </div>
+
+         </div>
+       </div>
+
+     </div>
+    <!-- tab style Ends -->
+  </br></br>
+    <div class="slideshow-holder">
+      <div class="fontStyle" style="text-align: center;"> Lets reminisce Durga Puja 2019 </div></br>
+     <iframe src="https://www.youtube.com/embed/WeETd_pkj74" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+<br><br>
+
+<!-- FOOTER -->
+ <footer>
+    <p>Copyright  &copy;2020  Aaponjon by JKC</p>
+ </footer>
+
+</div>
+
+
+<script src="js/scripts.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+     <title>Aaponjon Durga Puja 2020</title>
+    <link rel="stylesheet" href="css/headermenu.css" type="text/css" media="all">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="fetch.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+  <div class="containers" id="myHeader" style="background-color: #ffff99;">
+    <nav>
+      <div class="logo">
+        <a href="Home.html"><img src="images/apanjanlogo11.jpeg" alt="Apanjan Community">
+        </a>
+      </div>
+		  <label for="btn" class="icons">
+       		 <span class="fa fa-bars"></span>
+      </label>
+      <input type="checkbox" id="btn"></input>
+      <ul>
+			     <li><a href="Home.html">Home</a></li>
+			     <li>
+          		<label for="btn-1" class="show">Gallery + </label>
+          		<a href="#">Gallery</a>
+          		<input type="checkbox" id="btn-1"></input>
+          		<ul>
+					       <li><a href="#">Photos</a></li>
+					       <li><a href="galleryvideos.html">Videos</a></li>
+		  		    </ul>
+			    </li>
+		      <li><a href="aboutUs.html">About Us</a></li>
+		      <li><a href="contactUs.html">Contact Us</a></li>
+	    </ul>
+    </nav>
+  </div>
+  <div class="contents">
+     <div class="gallery-header">
+        <div style="text-align:center"class="about">
+              <h2> Image Gallery </h2>
+        </div>
+        <div class="galleryrow" style="text-align:center">
+          <img id="Img1" class="imgGallery" src="images/Photos/PHOTO1.jpg" onclick="openWindow(event,'Img1')"  style="width:80%;max-width:200px;padding-top:20px;"></img>
+          <img id="Img2" class="imgGallery" src="images/Photos/PHOTO2.jpg" onclick="openWindow(event,'Img2')"  style="width:80%;max-width:200px;padding-top:20px;"></img>
+          <img id="Img3" class="imgGallery" src="images/Photos/PHOTO3.jpg" onclick="openWindow(event,'Img3')"  style="width:80%;max-width:200px;padding-top:20px;"></img>
+          <img id="Img4" class="imgGallery" src="images/Photos/PHOTO4.jpg" onclick="openWindow(event,'Img4')"  style="width:80%;max-width:200px;padding-top:20px;"></img>
+          <img id="Img5" class="imgGallery" src="images/Photos/PHOTO8.jpg" onclick="openWindow(event,'Img5')"  style="width:80%;max-width:200px;padding-top:20px;"></img>
+          <img id="Img6" class="imgGallery" src="images/Photos/PHOTO6.jpg" onclick="openWindow(event,'Img6')"  style="width:80%;max-width:200px;padding-top:20px;"></img>
+          <img id="Img8" class="imgGallery" src="images/Photos/PHOTO5.jpg" onclick="openWindow(event,'Img8')"  style="width:80%;max-width:200px;padding-top:20px;"></img>
+        </br>
+          <img id="Img9" class="imgGallery" src="images/Photos/PHOTO9.jpg" onclick="openWindow(event,'Img9')"  style="width:80%;max-width:200px;padding-top:20px;"></img>
+          <img id="Img7" class="imgGallery" src="images/Photos/PHOTO7.jpg" onclick="openWindow(event,'Img7')"  style="width:80%;max-width:200px;padding-top:20px;"></img>
+      </div>
+  </div>
+  <br><br>
+  <!-- FOOTER -->
+  <footer>
+      <p>Copyright  &copy;2020  Aaponjon by JKC</p>
+  </footer>
+</div>
+
+ <!-- The Modal -->
+ <div id="ModalWindow" class="modalgallery">
+      <span class="gallerycloseModal">&times;</span>
+      <img class="modalgallery-content" id="imagesgallery">
+ </div>
+
+ <script>
+ 	// Get the modal
+ var slides = document.getElementsByClassName("imgGallery");
+
+ for (i = 0; i < slides.length; i++) {
+
+ var modal = document.getElementById("ModalWindow");
+ var img = document.getElementById(slides[i].id);
+ var modalImg = document.getElementById("imagesgallery");
+   img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+    }
+ }
+ // Get the <span> element that closes the modal
+ var span = document.getElementsByClassName("gallerycloseModal")[0];
+
+ // When the user clicks on <span> (x), close the modal
+ span.onclick = function() {
+   modal.style.display = "none";
+ }
+ </script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>
